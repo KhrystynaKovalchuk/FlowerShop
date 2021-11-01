@@ -1,7 +1,10 @@
+package flowerStore;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlowerBucket {
+public class FlowerBucket extends Item{
+
     public List<FlowerPack> flowerPackList = new ArrayList<FlowerPack>();
 
     public void addPack(FlowerPack flowerPack) {
@@ -15,4 +18,9 @@ public class FlowerBucket {
         }
         return price;
         }
+
+    @Override
+    public String getDescription() {
+        return "Beautiful bucket.";
     }
+}
